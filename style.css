@@ -1,0 +1,149 @@
+*{
+ padding: 0px;
+ margin: 0px;
+}
+
+a:visited {
+    color:inherit;
+}
+
+.header{
+    background-color: #252F66;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    padding: 20px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.centre {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.top_main {
+    display: flex;
+    gap: 87px;
+    max-width: 860px;
+    margin: 0 auto;
+
+}
+
+.tables {
+    display: flex;
+    gap: 35px; 
+    justify-content: space-around;
+}
+
+.table {
+    width: 500px;
+    background-color: gray;
+    border-color: black;
+    flex: 1 1 auto;
+}
+
+.table td {
+    padding: 7px;
+}
+
+.desc {
+    padding: 60px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 32px;
+}
+
+.table_text {
+    padding: 10px;
+}
+
+.card {
+    text-align: center;
+    padding: 20px;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-around;
+}
+
+.desc p:first-child {
+    font-weight: 700;
+}
+
+.card p {
+    font-size: 32px;
+}
+
+.card p:not(:last-child) {
+    margin-bottom: 22px;
+}
+
+@media screen and (max-width:428px) {
+    .logo {
+        float: left;
+        padding: 36px;
+    }
+
+    .top_main {
+        gap: 87px;
+        max-width: 860px;
+        margin: 0 auto;
+        display: contents;
+    }
+
+    .tables {
+        display: contents;
+        gap: 35px; 
+        justify-content: space-around;
+    }
+
+    .table {
+        width: 418px;
+        height: 300px;
+        background-color: gray;
+        border-color: black;
+        margin-bottom: 20px;
+    }
+
+    .desc {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 398px;
+        padding: 0 15px;
+        margin: 0 auto;  
+    }
+}
